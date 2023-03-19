@@ -1,5 +1,7 @@
 # InspectError
 
+[View Documentation](https://inspect-error.pages.dev/)
+
 A handy extension trait for `Result` that brings `Result::inspect_err` to stable Rust in the form of `InspectError::inspect_error`.
 
 Instead of this...
