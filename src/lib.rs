@@ -38,6 +38,7 @@
 //! assert_eq!(output, Err("couldn't connect to the database"));
 //! ```
 
+/// The core trait of this crate. Implemented for `Result`.
 pub trait InspectError<E> {
     #[must_use]
     fn inspect_error(self, inspect: impl FnOnce(&E)) -> Self;
