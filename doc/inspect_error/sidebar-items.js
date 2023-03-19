@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"trait":[["InspectError","The core trait of this crate. Implemented for `Result`."]]};
