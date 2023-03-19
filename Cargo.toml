@@ -1,7 +1,13 @@
 [package]
 name = "inspect_error"
 version = "0.1.0"
+description = "A utility extension trait for easily inspecting `Err` values"
 edition = "2021"
+authors = ["Demna Saghliani <saghliani.d@gmail.com>"]
+keywords = ["error", "debug", "debugging"]
+categories = ["development-tools::debugging"]
+license = "MIT OR Apache-2.0"
+rust-version = "1.56.1"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
