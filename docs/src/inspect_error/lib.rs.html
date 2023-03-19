@@ -96,6 +96,12 @@
 <a href="#96" id="96">96</a>
 <a href="#97" id="97">97</a>
 <a href="#98" id="98">98</a>
+<a href="#99" id="99">99</a>
+<a href="#100" id="100">100</a>
+<a href="#101" id="101">101</a>
+<a href="#102" id="102">102</a>
+<a href="#103" id="103">103</a>
+<a href="#104" id="104">104</a>
 </pre><pre class="rust"><code><span class="doccomment">//! A handy extension trait for `Result` that brings `Result::inspect_err` to stable Rust in the form of `InspectError::inspect_error`.
 //!
 //! Instead of this...
@@ -129,6 +135,9 @@
 //!     // Pretend this is a real `Result`.
 //!     let magic_number = Err(&quot;couldn&#39;t connect to the database&quot;)
 //!         .inspect_error(|err| eprintln!(&quot;Something went wrong: &#39;{err}&#39;.&quot;))?;
+//!
+//!     // Do something with the magic number.
+//!
 //!     Ok(magic_number)
 //! }
 //!
@@ -155,6 +164,9 @@
     ///     // Pretend this is a real `Result`.
     ///     let magic_number = Err(&quot;couldn&#39;t connect to the database&quot;)
     ///         .inspect_error(|err| eprintln!(&quot;Something went wrong: &#39;{err}&#39;.&quot;))?;
+    ///
+    ///     // Do something with the magic number.
+    ///
     ///     Ok(magic_number)
     /// }
     ///
