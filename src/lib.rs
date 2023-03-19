@@ -4,9 +4,10 @@ pub trait InspectError<E> {
 }
 
 impl<T, E> InspectError<E> for Result<T, E> {
-    /// Run the provided closure if the `Result` is an error and then return the
-    /// `Result`. Mainly intended for logging errors in a more natural manner than
-    /// using `Result::map_err` and manually returning the error.
+    /// Call the provided closure with a reference to the contained error (*if* the
+    /// `Result` is an error) and then return the `Result`. Mainly intended for
+    /// logging errors in a more natural manner than using `Result::map_err` and
+    /// manually returning the error.
     ///
     /// ```
     /// use inspect_error::InspectError;
