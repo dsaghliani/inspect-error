@@ -33,6 +33,9 @@ fn read_magic_number_from_db() -> Result<i32, &'static str> {
     // Pretend this is a real `Result`.
     let magic_number = Err("couldn't connect to the database")
         .inspect_error(|err| eprintln!("Something went wrong: '{err}'."))?;
+
+    // Do something with the magic number.
+
     Ok(magic_number)
 }
 

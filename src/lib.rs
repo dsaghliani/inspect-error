@@ -31,6 +31,9 @@
 //!     // Pretend this is a real `Result`.
 //!     let magic_number = Err("couldn't connect to the database")
 //!         .inspect_error(|err| eprintln!("Something went wrong: '{err}'."))?;
+//!
+//!     // Do something with the magic number.
+//!
 //!     Ok(magic_number)
 //! }
 //!
@@ -57,6 +60,9 @@ impl<T, E> InspectError<E> for Result<T, E> {
     ///     // Pretend this is a real `Result`.
     ///     let magic_number = Err("couldn't connect to the database")
     ///         .inspect_error(|err| eprintln!("Something went wrong: '{err}'."))?;
+    ///
+    ///     // Do something with the magic number.
+    ///
     ///     Ok(magic_number)
     /// }
     ///
